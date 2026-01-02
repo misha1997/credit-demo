@@ -423,7 +423,7 @@ function App() {
       <header className="p-[10px] md:p-[15px] bg-[#020001]">
         <div className="max-w-[1290px] w-full px-3 mx-auto">
           <div className="flex items-center justify-between">
-            <img src="/assets/img/pngwing.png" alt="Logo" className="max-h-[40px] md:max-h-[45px]" />
+            <img src="/credit-demo/assets/img/pngwing.png" alt="Logo" className="max-h-[40px] md:max-h-[45px]" />
             <div className="flex flex-col text-right">
               <span className="text-white text-[15px] md:text-[26px]">
                 BUY<strong>EASY</strong> - КУПУЙ В КРЕДИТ ЛЕГКО!

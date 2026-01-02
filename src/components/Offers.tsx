@@ -22,35 +22,35 @@ const Offers: React.FC<OffersProps> = ({ results, links }) => {
     {
       id: 'bank1',
       key: 'oschadbank',
-      img: '/assets/img/oschadbank.jpg',
+      img: '/credit-demo/assets/img/oschadbank.jpg',
       alt: 'Ощадбанк',
       title: 'Кредит від Ощадбанк'
     },
     {
       id: 'bank2',
       key: 'agricole',
-      img: '/assets/img/agricole.png',
+      img: '/credit-demo/assets/img/agricole.png',
       alt: 'Agricole',
       title: 'Кредит від Agricole'
     },
     {
       id: 'bank3',
       key: 'privatbank',
-      img: '/assets/img/privat.png',
+      img: '/credit-demo/assets/img/privat.png',
       alt: 'Приватбанк',
       title: 'Кредит від Приватбанк'
     },
     {
       id: 'bank4',
       key: 'privatbank24',
-      img: '/assets/img/privat.png',
+      img: '/credit-demo/assets/img/privat.png',
       alt: 'Приватбанк',
       title: 'Пільговий період від <br>Приватбанку на 24 місяці'
     },
     {
       id: 'bank5',
       key: 'privatbank36',
-      img: '/assets/img/privat.png',
+      img: '/credit-demo/assets/img/privat.png',
       alt: 'Приватбанк',
       title: 'Пільговий період від <br>Приватбанку на 36 місяців'
     }
