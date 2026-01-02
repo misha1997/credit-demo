@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Peugeot New Cyrillic";
+  src: url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Regular.eot");
+  src: local("Peugeot New Cyrillic Regular"), local("PeugeotNewCyrillic-Regular"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Regular.woff2") format("woff2"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Regular.woff") format("woff"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Peugeot New Cyrillic Ex";
+  src: url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-ExtraLight.eot");
+  src: local("Peugeot New Cyrillic Extra Light"), local("PeugeotNewCyrillic-ExtraLight"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-ExtraLight.woff2") format("woff2"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-ExtraLight.woff") format("woff"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Peugeot New Cyrillic";
+  src: url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Light.eot");
+  src: local("Peugeot New Cyrillic Light"), local("PeugeotNewCyrillic-Light"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Light.eot?#iefix") format("embedded-opentype"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Light.woff2") format("woff2"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Light.woff") format("woff"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Peugeot New Cyrillic";
+  src: url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Bold.eot");
+  src: local("Peugeot New Cyrillic Bold"), local("PeugeotNewCyrillic-Bold"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Bold.woff2") format("woff2"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Bold.woff") format("woff"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Peugeot New Cyrillic";
+  src: url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-LightItalic.eot");
+  src: local("Peugeot New Cyrillic Light Italic"), local("PeugeotNewCyrillic-LightItalic"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-LightItalic.eot?#iefix") format("embedded-opentype"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-LightItalic.woff2") format("woff2"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-LightItalic.woff") format("woff"), url("./assets/Fonts/Peugeot/PeugeotNewCyrillic-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  font-family: "Peugeot New Cyrillic";
+}
+
+/* Custom Range Slider Styling to match original design exactness */
+.custom-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #7a7878;
+  cursor: ew-resize;
+  margin-top: -6px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+.custom-range::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #7a7878;
+  cursor: ew-resize;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgb(89, 89, 89) 0%, rgb(215, 215, 215) 100%);
+  border-radius: 8px;
+}
+
+.custom-range::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgb(89, 89, 89) 0%, rgb(215, 215, 215) 100%);
+  border-radius: 8px;
+}
+
+/* Radio Button Styling */
+.radio-custom input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio-custom label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #020001;
+  font-size: 12px;
+}
+
+.radio-custom label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #7a7878;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.radio-custom input[type="radio"]:checked+label:before {
+  border: 1px solid #3172e0;
+}
+
+.radio-custom label:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #3172e0;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s ease;
+}
+
+.radio-custom input[type="radio"]:checked+label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.compare-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #7a7878;
+  border-radius: 3px;
+  background: #ffffff;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.compare-checkbox:checked {
+  background: #3172e0;
+  border-color: #3172e0;
+}
+
+.compare-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #ffffff;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
+}
+
+.car-card .detail-link {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.car-card:hover .detail-link,
+.car-card:focus-within .detail-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for car */
+@keyframes car-anim {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+.animate-car {
+  animation: car-anim 1s forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  /* start hidden */
+}
